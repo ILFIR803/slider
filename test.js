@@ -1,24 +1,22 @@
 'use strict';
-// let person = {
-//    name: 'Jhon',
-//    age: 25,
-//    isMarried: false,
-// }
+let money = prompt("Ваш бюджет на месяц?", ''),
+	time = prompt('Введите дату в формате YYYY-MM-DD', '');
 
-// console.log (person.name)
+let appData = {
+	budget: money,
+	expenses: {},
+	optionalExpenses: {},
+	income: [],
+	timeData: time,
+	savings: false
+};
 
-// let answer = confirm("Как дела?")
-// console.log(answer)
+let a1 = prompt("Введите обязательную статью расходов в этом месяце", ''),
+	a2 = prompt("Во сколько обойдется?", ''),
+	a3 = prompt("Введите обязательную статью расходов в этом месяце", ''),
+	a4 = prompt("Во сколько обойдется?", '');
 
-// let answer = +prompt("сколько вам лет?", "")
-// console.log(answer)
-// console.log(typeof(answer))
+appData.expenses.a1 = a2;
+appData.expenses.a3 = a4;
 
-// let incr = 10,
-//    decr = 180;
-
-// console.log(++incr);
-// console.log(decr--);
-// console.log(decr)
-
-
+alert(appData.budget / 30);
